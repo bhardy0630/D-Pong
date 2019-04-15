@@ -34,6 +34,6 @@ public class PaddleMovement : MonoBehaviour
         //Use Time.deltaTime to move a GameObject in the y direction, at n units per second. Multiply n by Time.deltaTime and add to the y component.
         //If we don't incorporate the Time.fixedDeltaTime, movement could be affected by changes in framerate.
 
-        controller.Move((paddleMove * Time.fixedDeltaTime), false, false);
+        controller.Move((paddleMove * Time.fixedDeltaTime));
     }
 }
